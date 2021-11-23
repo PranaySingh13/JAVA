@@ -1,6 +1,7 @@
 
 public class BasicNumericPromotion {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		char char1 = 1, char2 = 2;

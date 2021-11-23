@@ -1,6 +1,7 @@
 
 public class NonNumericPrimitiveCasting {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// int badInt = (int) true; // Compiler error: incompatible types

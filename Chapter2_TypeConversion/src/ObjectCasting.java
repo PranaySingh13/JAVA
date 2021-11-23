@@ -1,6 +1,7 @@
 
 public class ObjectCasting {
 
+	@SuppressWarnings({ "unused", "removal" })
 	public static void main(String[] args) {
 		// objects can be cast both explicitly and implicitly.
 
