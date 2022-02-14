@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
@@ -34,6 +35,28 @@ public class Date_And_Time {
 																														// :
 																														// 10
 																														// hours
+
+		LocalDate date3 = LocalDate.now();
+		int dd = date3.getDayOfMonth();
+		int mm = date3.getMonthValue();
+		int yy = date3.getYear();
+		System.out.println(dd + " " + mm + " " + yy);// 14 2 2022
+
+		LocalTime time3 = LocalTime.now();
+		int s = time3.getSecond();
+		int m = time3.getMinute();
+		int h = time3.getHour();
+		System.out.println(h + " " + m + " " + s);// 21 40 24
+
+		/*
+		 * If we want to represent both Date and Time then we should go for
+		 * LocalDateTime object.
+		 */
+		LocalDateTime dt = LocalDateTime.now();
+		System.out.println(dt);// 2022-02-14T21:43:18.802891400
+
+		System.out.println("After six months:" + dt.plusMonths(6));// After six months:2022-08-14T21:45:24.756893300
+		System.out.println("Before six months:" + dt.minusMonths(6));// Before six months:2021-08-14T21:45:24.756893300
 	}
 
 }
